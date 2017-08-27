@@ -1,0 +1,70 @@
+.production
+    background: #f3f3f3
+    &__container
+        +container()
+        padding-top: 141px
+    &__title
+.product-list
+    +col(12)
+    margin-top: -7px
+    display: flex
+    //justify-content: space-between
+    align-content: space-around
+    flex-wrap: wrap
+    &__ico
+        position: absolute
+        margin-top: 36px
+        margin-left: 53px
+    &__item,
+    &__item1
+        +col(3)
+        margin-top: 40px
+        margin-right: 43px
+        height: 260px
+        width: 260px
+        border-radius: 5px
+        background-color: #ffffff
+        transition: all .7s
+        &:hover
+            border: 1px solid
+            border-image-slice: 1
+            border-radius: 5px
+            border-image-source: linear-gradient(to left, #fe9a8b, #fd868c 41%, #f9748f 73%, #f78ca0)
+            box-shadow: 0 6px 23px 0 rgba(248, 116, 143, 0.51)        
+        &:hover .product-list__ico
+            display: none
+        &:hover .item-price
+            margin-top: 41px
+        &:hover .btn-prod
+            display: inline-block
+        &:nth-last-child(-n+3)
+            margin-bottom: 140px
+        &:nth-child(4n)
+            margin-right: -43px
+    &__item-btn
+        margin-top: 100px
+        margin-left: 64.5px
+        width: 133px
+        height: 60px
+        font-family: Lato
+        font-size: 18px
+        font-weight: 500
+        line-height: 1.67
+        text-align: center
+        color: #000000
+        cursor: pointer
+    &__item-item
+        height: 260px
+        width: 260px
+        position: absolute
+.not-active
+    display: none
+.btn-prod
+    width: 158px
+    margin-top: 27px
+    margin-left: 52px
+    display: none
+    &:hover
+        box-shadow: 0 6px 23px 0 rgba(248, 116, 143, 0.51)
+    
+        

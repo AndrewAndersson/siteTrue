@@ -1,0 +1,13 @@
+mixin footer()
+    +b.FOOTER.footer
+        +e.DIV.container
+            +e.DIV.logo
+                +b.A.logo(href='##')
+                    +e.IMG.img(src="img/logo/logo.svg")
+            +e.DIV.links
+                +b.A.__item(href="http://www.google.com", class="mdi mdi-google")
+                +b.A.__item(href="##", class="mdi mdi-twitter")
+                +b.A.__item(href="##", class="mdi mdi-facebook")
+                +b.A.__item(href="##", class="mdi mdi-vk")
+            +e.DIV.copyright
+                +b.P.item © Типография “Киев”, 2017
